@@ -11,6 +11,7 @@ require('../css/index.scss');
 
 // Make JQuery globally available before the other module calls,
 // then it's available in the other modules without having to require it.
+// Comment for pull request!
 const $ = require('jquery');
 
 const tabBar = require('./tab-bar');
