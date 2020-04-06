@@ -1,0 +1,15 @@
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+      @return $number / ($number * 0 + 1);
+  }
+  
+  @return $number;
+}
+
+@function max($number1, $number2) {
+  @if strip-unit($number1) < strip-unit($number2) {
+    @return $number1;
+  }
+
+  @return $number2;
+}

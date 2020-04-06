@@ -1,0 +1,115 @@
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  .main-image {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%;
+    background-image: url('../images/restaurant.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.main-headline {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Lobster';
+  font-size: 80px;
+  font-size: min(80px, 0.1 * 100vw);
+  white-space: nowrap;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slogan {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  font-family: 'Lobster';
+  font-size: 50px;
+  font-size: min(50px, 0.06 * 100vw);
+  white-space: nowrap;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: translate(-50%, -50%);
+}
+
+.info {
+  display: flex;
+  width: 100%;
+  padding: 20px 0 20px 20px;
+  margin-top: 40px;
+}
+
+.our-story {
+  flex-basis: 60%;
+  font-family: 'Dancing Script';
+  font-size: 30px;
+  text-align: center;
+}
+
+.images {
+  flex-basis: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  .image {
+    flex-basis: 55%;
+    height: 0;
+    padding-bottom: 55%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .image1 {
+    background-image: url('../images/burger-1.jpg');
+  }
+
+  .image2 {
+    background-image: url('../images/burger-2.jpg');
+  }
+
+  .divider {
+    flex-basis: 100%;
+    height: 0;
+    padding-bottom: 10%;
+    display: none;
+  }
+
+  .image3 {
+    background-image: url('../images/burger-3.jpg');
+  }
+
+  .image4 {
+    background-image: url('../images/burger-4.jpg');
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .images {
+    .image {
+      flex-basis: 45%;
+      padding-bottom: 45%;
+    }
+  }  
+}
+
+@media screen and (min-width: 900px) {
+  .images {
+    .image {
+      flex-basis: 35%;
+      padding-bottom: 35%;
+    }
+  }
+}

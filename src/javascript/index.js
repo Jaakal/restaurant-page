@@ -1,4 +1,5 @@
 require('../css/reset.css');
+require('../css/utility-functions.scss');
 require('../css/style.scss');
 require('../css/index.scss');
 
@@ -12,13 +13,26 @@ require('../css/index.scss');
 // then it's available in the other modules without having to require it. 
 window.$ = window.JQuery = require('jquery');
 
-const thirdHeadline = require('./script-one');
+const tabBar = require('./tab-bar');
+const tabs = []
+tabs.push(require('./home'));
+tabs.push(require('./menu'));
+tabs.push(require('./contact'));
+
+const refreshPage = () => {
+  $('#content').html(tabBar.getHTML());
+  $('#content').append(tabs[tabBar.getCurrentTab()]);
+  tabBar.setEventHandlers(refreshPage);
+
+  if (tabBar.getCurrentTab() === 1) {
+    setTimeout(() => {
+      $('.menu-page').addClass('start-animation');
+    }, 0);
+  }
+}
 
 $(document).ready(() => {
-  $('body').append(`<div class="third-headline">${thirdHeadline}</div>`);
-  
-  $('body').append(`<div class="fourth-headline">
-    I just like to be here for making things more colorful!</div>`
-  );
+  tabBar.setTabs('Home', 'Menu', 'Contact');
+  refreshPage();
 });
 

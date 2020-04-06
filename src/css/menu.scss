@@ -1,0 +1,47 @@
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.menu-page {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  perspective: 10000px;
+}
+
+.menu-page.start-animation {
+  .left-page {
+    transform: rotateY(0);
+    // transition: transform 1.4s ease;
+  }
+  
+  .right-page {
+    transform: rotateY(0);
+  }
+}
+
+.left-page,
+.right-page {
+  flex-basis: 50%;
+  height: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform-style: preserve-3d;
+  transition: transform 1.4s ease;
+} 
+
+.left-page {
+  padding-bottom: 82.69%;
+  background-image: url('../images/menu-1.png');
+  transform-origin: right;
+  transform: rotateY(80deg);
+}
+
+.right-page {
+  padding-bottom: 82.62%;
+  background-image: url('../images/menu-2.png');
+  transform-origin: left;
+  transform: rotateY(-80deg);
+}
