@@ -1,5 +1,4 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const webpack = require('webpack');
 
 // Webpack uses this to work with directories
 const path = require('path');
@@ -68,7 +67,7 @@ module.exports = {
       },
       {
         // Now we apply rule for images
-        test: /\.(png|jpe?g|gif|svg)$/,
+        test: /\.(ico|png|jpe?g|gif|svg)$/,
         use: [
                {
                  // Using file-loader for these files

@@ -9,6 +9,7 @@ module.exports = `
     <div class="info">
       <div class="our-story">
         <h3>Our Story</h3>
+        <div class="divider"></div>
         <p>It all began in 2012 when we opened our first restaurant, which
           quickly became one of the most popular street-food places in Tallinn.
           Word spread across the capital and beyond and soon we were forced to

@@ -1,0 +1,159 @@
+@mixin black-peppers {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  background-image: url('../images/black-pepper.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translate(-50%, -50%);
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .images {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 25px;
+    margin: 20px 0 60px 0;
+
+    .image1,
+    .image2 {
+      flex-basis: 45%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+    .image1 {
+      padding-bottom: 33.75%;
+      background-image: url('../images/contact-1.jpg');
+      
+    }
+
+    .image2 {
+      position: relative;
+      padding-bottom: 30.015%;
+      background-image: url('../images/contact-2.jpg');
+
+      span:nth-of-type(1) {
+        position: absolute;
+        bottom: -5.56%;
+        left: -3.7%;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(to top, #000000 50%, #ffffff 80%);
+      }
+      
+      span:nth-of-type(2) {
+        position: absolute;
+        bottom: -5.56%;
+        left: -3.7%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(to right, #000000 50%, #ffffff 80%);
+      }
+      
+      span:nth-of-type(3) {
+        position: absolute;
+        top: -5.56%;
+        right: -3.7%;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(to bottom, #000000 50%, #ffffff 80%);
+      }
+      
+      span:nth-of-type(4) {
+        position: absolute;
+        top: -5.56%;
+        right: -3.7%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(to left, #000000 50%, #ffffff 80%);
+      }
+    }
+  }
+}
+
+.frame {
+  position: relative;
+  padding: 35px;
+
+  span:nth-of-type(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #000000 10%, #ffffff 30%, #ffffff 70%, #000000 90%);
+
+    &:after {
+      @include black-peppers();
+    }
+  }
+  
+  span:nth-of-type(2) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #000000 10%, #ffffff 30%, #ffffff 70%, #000000 90%);
+
+    &:after {
+      @include black-peppers();
+    }
+  }
+
+  span:nth-of-type(3) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, #000000 10%, #ffffff 30%, #ffffff 70%, #000000 90%);
+
+    &:after {
+      @include black-peppers();
+    }
+  }
+
+  span:nth-of-type(4) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, #000000 10%, #ffffff 30%, #ffffff 70%, #000000 90%);
+
+    &:after {
+      @include black-peppers();
+    }
+  }
+}
+
+.address-line {
+  display: flex;
+  margin: 10px 0;
+
+  div:nth-of-type(1) {
+    font-family: 'Lobster';
+    font-size: 22px;
+    margin-right: 10px;
+  }
+
+  div:nth-of-type(2) {
+    font-family: 'Dancing Script';
+    font-size: 22px;
+  }
+}

@@ -22,6 +22,10 @@
   font-style: normal;
 }
 
+html {
+  overflow-y:scroll;
+}
+
 body {
   display: flex;
   flex-direction: column;
