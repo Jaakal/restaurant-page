@@ -1,4 +1,4 @@
-require ('../css/home.scss');
+require('../css/home.scss');
 
 module.exports = `
   <div class="home-content">

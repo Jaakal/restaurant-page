@@ -1,10 +1,10 @@
-# Webpack Template
+# Restaurant Page
 
-Project template for using Webpack as the bundler for a project. Set up with Babel-, SCSS/CSS-, image- and font-loaders. jQuery module is added as well and included globally. I'm using jQuery function `$(document).ready(() => {})` in different modules do describe, in which order the final bundle is composed to together, because that function is executed in multiple bindings in the order it was attached.
+Project, where I created HTML pages as JavaScript modules. In other words when clicking on different tabs, I'm using JavaScript to dynamically injecting HTML into DOM.
 
 ## Screenshot
 
-![Screenshot of the webpage](https://github.com/Jaakal/webpack-template/blob/master/src/images/screenshot.png)
+![Screenshot of the webpage](https://github.com/Jaakal/restaurant-page/blob/master/src/images/screenshot.png)
 
 ## Getting Started
 
@@ -121,5 +121,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 * Article [How to configure Webpack 4 from scratch for a basic website](https://dev.to/pixelgoo/how-to-configure-webpack-from-scratch-for-a-basic-website-46a5) used as a reference.
 * Video tutorial in [Youtube](https://www.youtube.com/watch?v=ytRnPV0kRN0) used as a reference.
-* Font [Lobster](https://fonts.google.com/specimen/Lobster) used for the main headline.
-* Link to the [background image](https://unsplash.com/photos/nmpW_WwwVSc).
+* Font [Lobster](https://fonts.google.com/specimen/Lobster).
+* Font [Dancing Script](https://fonts.google.com/specimen/Dancing+Script).
+* Link to the free images site [Unsplash](https://unsplash.com).

@@ -1,4 +1,4 @@
-require ('../css/menu.scss');
+require('../css/menu.scss');
 
 module.exports = `
   <div class="menu-page">

@@ -1,4 +1,4 @@
-require ('../css/contact.scss');
+require('../css/contact.scss');
 
 module.exports = `
   <div class="wrapper">
