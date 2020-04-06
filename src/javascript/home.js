@@ -1,6 +1,6 @@
-require('../css/home.scss');
+import '../css/home.scss';
 
-module.exports = `
+const htmlString = `
   <div class="home-content">
     <div class="main-image">
       <div class="main-headline">Piper's Pub</div>
@@ -31,3 +31,5 @@ module.exports = `
     </div>
   </div>
 `;
+
+export { htmlString as default };

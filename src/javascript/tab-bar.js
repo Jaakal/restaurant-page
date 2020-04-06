@@ -1,8 +1,8 @@
-require('../css/tab-bar.scss');
+import '../css/tab-bar.scss';
 
-const $ = require('jquery');
+import $ from 'jquery';
 
-module.exports = (() => {
+const tabBar = (() => {
   let tabsArray;
   let currentTab;
   let callBack;
@@ -86,3 +86,5 @@ module.exports = (() => {
     setTabs, getCurrentTab, getHTML, setEventHandlers,
   };
 })();
+
+export { tabBar as default };

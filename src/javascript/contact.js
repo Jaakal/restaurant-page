@@ -1,6 +1,6 @@
-require('../css/contact.scss');
+import '../css/contact.scss';
 
-module.exports = `
+const htmlString = `
   <div class="wrapper">
     <div class="images">
       <div class="image1"></div>
@@ -35,3 +35,5 @@ module.exports = `
     </div>
   </div>
 `;
+
+export { htmlString as default };
