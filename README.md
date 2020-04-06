@@ -4,7 +4,7 @@ Project, where I created HTML pages as JavaScript modules. In other words when c
 
 ## Screenshot
 
-![Screenshot of the webpage](https://github.com/Jaakal/restaurant-page/blob/master/src/images/screenshot.png)
+![Screenshot of the webpage](https://github.com/Jaakal/restaurant-page/blob/milestone1/src/images/screenshot.png)
 
 ## Getting Started
 
