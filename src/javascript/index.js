@@ -9,7 +9,9 @@ import '../css/index.scss';
  * will be added before the main stylesheets.
  * * */
 
+/* eslint-disable import/no-unresolved */
 import $ from 'jquery';
+/* eslint-enable import/no-unresolved */
 
 import tabBar from './tab-bar';
 
