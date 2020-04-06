@@ -1,8 +1,12 @@
 import '../css/tab-bar.scss';
 
+
 /* eslint-disable import/no-unresolved */
 import $ from 'jquery';
 /* eslint-enable import/no-unresolved */
+
+import $ from 'jquery';
+
 
 const tabBar = (() => {
   let tabsArray;
