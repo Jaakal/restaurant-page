@@ -1,8 +1,10 @@
-require('../css/menu.scss');
+import '../css/menu.scss';
 
-module.exports = `
+const htmlString = `
   <div class="menu-page">
     <div class="left-page"></div>
     <div class="right-page"></div>
   </div>
 `;
+
+export { htmlString as default };

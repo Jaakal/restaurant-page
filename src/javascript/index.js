@@ -1,7 +1,7 @@
-require('../css/reset.css');
-require('../css/utility-functions.scss');
-require('../css/style.scss');
-require('../css/index.scss');
+import '../css/reset.css';
+import '../css/utility-functions.scss';
+import '../css/style.scss';
+import '../css/index.scss';
 
 /**
  * JavaScript module requirers have to be below the stylesheet imports.
@@ -9,16 +9,15 @@ require('../css/index.scss');
  * will be added before the main stylesheets.
  * * */
 
-// Make JQuery globally available before the other module calls,
-// then it's available in the other modules without having to require it.
-const $ = require('jquery');
+import $ from 'jquery';
 
-const tabBar = require('./tab-bar');
+import tabBar from './tab-bar';
 
-const tabs = [];
-tabs.push(require('./home'));
-tabs.push(require('./menu'));
-tabs.push(require('./contact'));
+import home from './home';
+import menu from './menu';
+import contact from './contact';
+
+const tabs = [home, menu, contact];
 
 const refreshPage = () => {
   $('#content').html(tabBar.getHTML());
