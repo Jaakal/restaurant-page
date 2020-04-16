@@ -2,6 +2,8 @@
 
 Project, where I created HTML pages as JavaScript modules. In other words when clicking on different tabs, I'm using JavaScript to dynamically injecting HTML into DOM.
 
+Link to [live version](https://jaak-restaurant-page.herokuapp.com/).
+
 ## Screenshot
 
 ![Screenshot of the webpage](https://github.com/Jaakal/restaurant-page/blob/milestone1/src/images/screenshot.png)
