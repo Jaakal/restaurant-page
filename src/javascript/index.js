@@ -14,9 +14,6 @@ import '../css/index.scss';
 import $ from 'jquery';
 /* eslint-enable import/no-unresolved */
 
-import $ from 'jquery';
-
-
 import tabBar from './tab-bar';
 
 import home from './home';
