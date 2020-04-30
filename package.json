@@ -41,6 +41,6 @@
     "autoprefixer": "^9.7.5",
     "cssnano": "^4.1.10",
     "express": "^4.17.1",
-    "jquery": "^3.4.1"
+    "jquery": "^3.5.0"
   }
 }
